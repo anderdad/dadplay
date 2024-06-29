@@ -23,8 +23,5 @@ lapply(packages, library, character.only = TRUE)
 setwd("C:/Users/endoz/Documents/workinDir/")
 
 
-# Load camera trap data from a XLSX
-camera_trap_data <- read_camtrap_xlsx("camera_trap_data.xlsx")
-
-#load the camtrapR example data
-data("detection_history")
+#for all images in the working folder using the camtrapR package to create station folder
+camtrapR::createStationFolders("C:/Users/endoz/Documents/workinDir/")
